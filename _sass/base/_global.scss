@@ -26,6 +26,8 @@ body {
   font-family: $font-family-main;
   font-size: $font-size;
   word-wrap: break-word;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;

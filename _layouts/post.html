@@ -14,14 +14,34 @@ layout: default
   {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
 </article>
 
-<!-- Disqus -->
-{% if site.theme_settings.disqus_shortname %}
-<div class="comments">
-  {% include disqus.html %}
-</div>
-{% endif %}
+
 
 <!-- Post navigation -->
 {% if site.theme_settings.post_navigation %}
   {% include post_nav.html %}
 {% endif %}
+<style>
+  @media screen and (min-width: 768px) { 
+        .giscus-frame{
+          width: 80vw;
+          margin-left: 10vw;
+          margin-right: 10vw;
+          margin-top: 2vh;
+      }
+    }
+</style>
+<script src="https://giscus.app/client.js"
+        data-repo="EzioSweet/blog-restart"
+        data-repo-id="R_kgDOLt6u_Q"
+        data-category="General"
+        data-category-id="DIC_kwDOLt6u_c4CerZ4"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light_tritanopia"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>

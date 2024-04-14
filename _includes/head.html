@@ -22,34 +22,92 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-	<!-- Google Fonts -->
-	{% if site.theme_settings.google_fonts %}
-	<link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet"
-		type="text/css">
-	{% endif %}
-
-	<!-- KaTeX -->
-	{% if site.theme_settings.katex and page.id %}
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
-		integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
-
-	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"
-		integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ"
-		crossorigin="anonymous"></script>
-	{% endif %}
-
-	<!-- Google Analytics -->
-	{% if site.theme_settings.google_analytics %}
-	<script>
-		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', '{{ site.theme_settings.google_analytics }}', 'auto');
-		ga('send', 'pageview');
-	</script>
-	{% endif %}
+	<style>
+		.highlight {
+			border-radius: 10px;
+		}
+		.highlight pre {
+			padding: 15px;
+		}
+		.highlight, .highlight .w {
+		color: #fbf1c7;
+		background-color: #282828;
+		}
+		.highlight .err {
+		color: #fb4934;
+		background-color: #282828;
+		}
+		.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+		color: #928374;
+		font-style: italic;
+		}
+		.highlight .cp {
+		color: #8ec07c;
+		}
+		.highlight .nt {
+		color: #fb4934;
+		}
+		.highlight .o, .highlight .ow {
+		color: #fbf1c7;
+		}
+		.highlight .p, .highlight .pi {
+		color: #fbf1c7;
+		}
+		.highlight .gi {
+		color: #b8bb26;
+		background-color: #282828;
+		}
+		.highlight .gd {
+		color: #fb4934;
+		background-color: #282828;
+		}
+		.highlight .gh {
+		color: #b8bb26;
+		}
+		.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+		color: #fb4934;
+		}
+		.highlight .kc {
+		color: #d3869b;
+		}
+		.highlight .kt {
+		color: #fabd2f;
+		}
+		.highlight .kd {
+		color: #fe8019;
+		}
+		.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+		color: #b8bb26;
+		font-style: italic;
+		}
+		.highlight .si {
+		color: #b8bb26;
+		font-style: italic;
+		}
+		.highlight .sr {
+		color: #b8bb26;
+		font-style: italic;
+		}
+		.highlight .se {
+		color: #fe8019;
+		}
+		.highlight .nn {
+		color: #8ec07c;
+		}
+		.highlight .nc {
+		color: #8ec07c;
+		}
+		.highlight .no {
+		color: #d3869b;
+		}
+		.highlight .na {
+		color: #b8bb26;
+		}
+		.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+		color: #d3869b;
+		}
+		.highlight .ss {
+		color: #83a598;
+		}
+	</style>
 </head>
