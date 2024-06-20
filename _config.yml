@@ -13,8 +13,8 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>这是一个庸人的博客</p>
-     <p>一场闹剧，诸多烦恼，终究不过，庸人自扰。</p>
+     <p>知识应当流通与分享。</p>
+     <p>一场闹剧，诸般烦恼，终究不过，庸人自扰。</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
