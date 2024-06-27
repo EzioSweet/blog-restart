@@ -1,0 +1,94 @@
+---
+layout: post
+title: 统计物理第七部分 统计力学
+tags: 
+    - 热力学与统计物理
+    - 期末复习
+---
+
+以下是热力学和统计物理第七部分相关内容
+
+### 能量均分
+
+#### 能量均分定理
+
+定义：如果一个经典系统的能量是$n$个平方模之和，且该系统与一个温度为$T$的恒温热源进行接触，则系统的平均能量为:$n\times \frac{1}{2}k_BT$
+
+#### 单原子气体的平动
+
+单原子气体中每个原子的能量为：
+
+$$
+E=\frac{1}{2}mv_x^2+\frac{1}{2}mv_y^2+\frac{1}{2}mv_z^2
+$$
+
+则其由三个独立的平方模之和，则其能量为$\langle E\rangle=\frac32k_BT$
+
+#### 双原子气体的转动
+
+$$
+E=\frac{1}{2}mv_x^2+\frac{1}{2}mv_y^2+\frac{1}{2}mv_z^2+\frac{L_1^2}{2I_1}+\frac{L_2^2}{2I_2}
+$$
+
+则能量为$$\frac52k_BT$$
+
+能量均分定理通常仅在高温下有效，高温使得热能远大于量子化能级之间的能量间隔
+
+### 配分函数
+
+定义配分函数为所有态的玻尔兹曼因子的和：
+
+$$Z=\sum_\alpha\exp(-\beta E_\alpha)$$
+
+解统计力学问题的步骤：
+1. 写出配分函数
+2. 按照标准程序得到态函数
+
+#### 写出配分函数
+
+我们以几个例子来说明：
+
+对于一个二能级系统，其能量为$\pm\frac{\Delta}{2}$，则
+
+$$Z=\sum_i\exp{-\beta E_i}=\exp(\beta\frac{\Delta}{2})+\exp(-\beta\frac{\Delta}{2})=2\cosh(\frac{\beta\Delta}{2})$$
+
+对于一个转动能级系统，其能量为$E_J=\frac{\hbar^2}{2I}J(J+1)$
+
+$$Z=\sum_i\exp{-\beta E_i}=\sum_{J=0}^\infty(2J+1)\exp(-\beta\hbar^2\frac{J(J+1)}{2I})$$
+
+#### 得到态函数
+
+$$
+U=-\frac{\mathrm d \ln Z}{\mathrm \beta}\\
+S=\frac{U}{T}+k_B\ln Z\\
+F=-k_BT\ln Z\\
+p=k_BT\left(\frac{\partial Z}{\partial V} \right)_T\\
+H=U+pV\\
+G=F+pV=H-TS
+$$
+
+#### 组合配分函数
+
+假定能量$E$依赖于各种独立的共线，比如是$a$和$b$两个系统的和，则
+
+$$E=E_a+E_b$$
+
+则
+
+$$Z=Z_aZ_b$$
+
+### 理想气体的统计力学
+
+#### 态密度
+
+这里的态密度我们可以使用在固体物理中的定义，但不考虑电子自旋。
+
+$$g(k)=\cdot\frac{L^3}{8\pi^3}\cdot 4\pi k^2\mathrm dk$$
+
+#### 量子密度
+
+$$Z=\int_0^\infty exp(-\beta E(k))g(k)$$
+
+对于单分子，有：
+
+$$E=\frac{\hbar^2k^2}{2m}$$
